@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jit Mondal | Portfolio Website</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="description" content="The professional portfolio of [Your Name], a Data Scientist specializing in machine learning, Python, and predictive modeling.">
+    
+    <link rel="icon" href="profile.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>Jit Mondal</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a onclick="scrollToElement('#about')">About</a></li>
+                    <li><a onclick="scrollToElement('#projects')">Projects</a></li>
+                    <li><a onclick="scrollToElement('#skills')">Skills</a></li>
+                    <li><a onclick="scrollToElement('#contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h2>Data Scientist | Building Insightful Predictive Models</h2>
+            <p>I transform complex data into clear, actionable business strategies using Python, R, SQL, and machine learning.</p>
+            <a href="#projects" class="cta-button">View My Case Studies</a>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Professional Photo of [Your Name]" class="profile-photo">
+            <p> Hello! I'm Jit Mondal, a Master's student in Statistics at ISI Kolkata with a passion for transforming data into actionable insights. My journey started with a strong academic foundation in statistics during my B.Sc. (CGPA 9.72), and I've since developed expertise in Python, R, and a range of machine learning and statistical modeling techniques. I thrive on applying these skills to real-world challenges, with project experience in diverse areas like financial risk modeling (loan approval prediction), energy demand forecasting, and econometric analysis (petrol consumption). Beyond the technical side, I also enjoy collaboration and leadership; I recently led the tech team for our college fest, Stochastico '25, where we successfully built a custom registration website using Flask.</p>
+
+<p>When I'm not immersed in data, I enjoy singing 🎤 and staying active by playing sports like table tennis 🏓, cricket 🏏, and badminton 🏸.</p>
+
+<p>My core professional interests lie in machine learning and statistical modeling, and I'm particularly keen on exploring their applications in areas like quantitative risk. I'm eager to bring my analytical skills, practical experience, and enthusiasm for problem-solving to an organization where I can make a meaningful impact with data.</p>
+            <a href="Jit_Mondal_MD2411 (1).pdf" target="https://drive.google.com/file/d/1Z6iZYLj2yEztNv5LKkykcpNEHuMoHjyJ/view?usp=sharing" class="download-link">Download Full Resume (PDF)</a>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section projects-grid">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <article class="project-card">
+                <h3>Loan Approval Prediction</h3>
+                <p>This project developed a credit risk model (XGBoost, 98.65% accuracy) to predict loan approval, demonstrating expertise in feature selection, rigorous statistical diagnostics, and advanced ML implementation.</p>
+                <a href="https://github.com/JitaDeveloper/Loan-Approval-Prediction" class="detail-link">View Case Study →</a>
+            </article>
+            
+            <article class="project-card">
+                <h3>Electricity Demand Forecasting</h3>
+                <p>This project involved multi-seasonal time series forecasting (daily/yearly cycles) of hourly electricity demand, utilizing MSTL decomposition and a hybrid SARIMAX-enhanced linear model to achieve the lowest forecast error (MAE: 735.59).</p>
+                <a href="https://github.com/JitaDeveloper/Electricity-Consumption" class="detail-link">View Case Study →</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="skills" class="content-section skills-list">
+        <div class="container">
+            <h2>My Toolkit</h2>
+            <ul>
+                <li>**Programming:** Python (Pandas, Scikit-learn, NumPy), SQL, R</li>
+                <li>**Machine Learning:** Supervised/Unsupervised Learning, Deep Learning (TensorFlow/PyTorch)</li>
+                <li>**Deployment:** Docker, AWS S3/EC2, Streamlit, Git/GitHub</li>
+                <li>**Visualization:** Matplotlib, Seaborn, Plotly, Tableau</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section contact-form">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm available for freelance projects and full-time opportunities. Send me a message!</p>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/[your-id]" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/[your-id]" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 [Your Name]. Built with HTML and CSS.</p>
+        </div>
+    </footer>
+
+    </body>
+    <script src="script.js"></script>
+</html>
