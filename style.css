@@ -94,6 +94,7 @@ h2 {
 
 .main-nav ul li {
     margin-left: 20px;
+    cursor:pointer;
 }
 
 .main-nav a {
@@ -387,3 +388,4 @@ h2 {
     }
 
 }
+
