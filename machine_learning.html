@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE= edge">
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0">
+    <title>Jit Mondal | Machine Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family= Dancing+Script&family= Roboto:wght@100&display= swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="phone2.css">
+    
+    <script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=AM_CHTML"> </script>
+</head>
+
+<body>
+    <div class="heading">
+        <H1>Machine Learning
+        </H1>
+    </div>
+    <span class="top"><a href="#">Go to the top</a></span>
+    <div class="intro cmath">
+        <ul class="index">
+            <li>Contents
+
+            </li>
+            <ol>
+                
+                    <li><a href="#1">Machine Learning: কম্পিউটারকে শেখানো যায় কীভাবে?</a></li>
+                
+                    <li><a href="#2">Machine Learning কী?</a></li>
+                    <li><a href="#3">Traditional Programming বনাম Machine Learning</a></li>
+                    <li><a href="#4">একটা খুব সহজ উদাহরণ</a></li>
+                    <li><a href="#5">তাহলে Model কী?</a></li>              
+                    <li><a href="#6">Machine Learning কি মানুষের মতো চিন্তা করে?</a></li>
+                    <li><a href="#7">একটু ভাবো</a></li>
+
+                    
+
+            </ol>
+        </ul>
+    </div>
+    <div class="intro cmath floatleft">
+        <ul>
+            <h2 id="1">Machine Learning: কম্পিউটারকে শেখানো যায় কীভাবে?</h2>
+            <div>
+                <p>
+            ধরো, তোমার কাছে একটা ছবি আছে। ছবিতে একটা বিড়াল আছে।
+        </p>
+
+        <p>
+            তুমি ছবিটা দেখেই বলে দিতে পারো—
+            <strong>“এটা একটা বিড়াল।”</strong>
+        </p>
+
+        <p>
+            কিন্তু একটা কম্পিউটারকে যদি সেই একই ছবি দেখিয়ে জিজ্ঞেস করা হয়,
+        </p>
+
+        <blockquote>
+            “এটা কী?”
+        </blockquote>
+
+        <p>
+            তাহলে কম্পিউটার কিন্তু আমাদের মতো করে ছবিটা দেখে বুঝতে পারে না
+            যে এটা একটা বিড়াল।
+        </p>
+
+        <p>
+            তাহলে কি কম্পিউটারকে বিড়াল চিনতে শেখানো সম্ভব?
+        </p>
+
+        <p>
+            <strong>অবশ্যই সম্ভব।</strong>
+        </p>
+
+        <p>
+            আর এই “শেখানো”-র পিছনেই রয়েছে
+            <strong>Machine Learning</strong>।
+        </p>
+
+
+               
+
+
+       
+        </ul>
+    </div>
+    <div class="intro cmath floatright">
+        <h2 id="2">Machine Learning কী?</h2>
+
+        <p>
+            Machine Learning-এর বাংলা করলে দাঁড়ায়
+            <strong>যন্ত্রের শেখা</strong>।
+        </p>
+
+        <p>
+            কিন্তু এখানে “শেখা” বলতে মানুষের মতো করে শেখা বোঝায় না।
+        </p>
+
+        <p>
+            আমরা যখন কোনো কিছু শিখি, তখন অভিজ্ঞতা থেকে ধীরে ধীরে একটা
+            ধারণা তৈরি করি।
+        </p>
+
+        <p>
+            যেমন, তুমি যদি অনেকগুলো বিড়াল দেখো, তাহলে বিড়ালের কিছু
+            সাধারণ বৈশিষ্ট্য তোমার মাথায় তৈরি হয়ে যাবে—
+        </p>
+
+        <ul>
+            <li>চারটি পা থাকে</li>
+            <li>দুটি কান থাকে</li>
+            <li>লেজ থাকে</li>
+            <li>চোখ ও নাকের একটি নির্দিষ্ট ধরনের গঠন থাকে</li>
+        </ul>
+
+        <p>
+            এরপর তুমি যদি নতুন কোনো বিড়াল দেখো, যেটাকে আগে কখনও দেখোনি,
+            তবুও তুমি সেটাকে দেখে বলতে পারবে,
+        </p>
+
+        <blockquote>
+            “এটা একটা বিড়াল।”
+        </blockquote>
+
+        <p>
+            Machine Learning-এও মোটামুটি একই ধরনের একটা ধারণা কাজ করে।
+        </p>
+
+        <p>
+            আমরা কম্পিউটারকে একগুচ্ছ <strong>data</strong> দিই।
+            সেই data থেকে কম্পিউটার কিছু <strong>pattern</strong> বা
+            নিয়ম খুঁজে বের করার চেষ্টা করে।
+        </p>
+
+        <p>
+            তারপর সেই শেখা pattern ব্যবহার করে নতুন data সম্পর্কে
+            <strong>prediction</strong> করে।
+        </p>
+
+        <p>
+            অর্থাৎ খুব সহজভাবে,
+        </p>
+
+        <p>
+            <strong>Data → Learning → Pattern → Prediction</strong>
+        </p>
+
+        <p>
+            এটাই Machine Learning-এর মূল ধারণা।
+        </p>
+    </div>
+    <div class="intro cmath">
+       <h2 id="3">Traditional Programming বনাম Machine Learning</h2>
+
+        <p>
+            Machine Learning বোঝার আগে একটা জিনিস বোঝা খুব গুরুত্বপূর্ণ।
+        </p>
+
+        <p>
+            সাধারণ programming-এ আমরা কী করি?
+        </p>
+
+        <p>
+            ধরো, তুমি একটা calculator বানালে।
+        </p>
+
+        <p>
+            তুমি calculator-কে বলে দিলে—
+        </p>
+
+        <blockquote>
+            “দুটি সংখ্যা নাও এবং তাদের যোগ করো।”
+        </blockquote>
+
+        <p>
+            এখানে তুমি নিজেই <strong>নিয়মটা (rule)</strong> লিখে দিচ্ছ।
+        </p>
+
+        <p>
+            অর্থাৎ,
+        </p>
+
+        <p>
+            <strong>Input + Rule → Output</strong>
+        </p>
+
+        <p>
+            যেমন:
+        </p>
+
+        <p>
+            <strong>5 + 3 → 8</strong>
+        </p>
+
+        <p>
+            এখানে computer জানে কী করতে হবে, কারণ programmer তাকে সেই
+            rule বলে দিয়েছে।
+        </p>
+
+        <p>
+            কিন্তু কিছু problem আছে যেখানে rule লিখে দেওয়াটা খুব কঠিন।
+        </p>
+
+        <h3>বিড়াল চেনার সমস্যা</h3>
+
+        <p>
+            ধরো, আমরা computer-কে বিড়াল চিনতে শেখাতে চাই।
+        </p>
+
+        <p>
+            তখন কি আমরা লিখতে পারি—
+        </p>
+
+        <blockquote>
+            “যদি ছবিতে দুটি কান থাকে এবং চারটি পা থাকে এবং লেজ থাকে,
+            তাহলে সেটি বিড়াল।”
+        </blockquote>
+
+        <p>
+            সমস্যাটা হল, সব বিড়াল দেখতে একরকম নয়।
+        </p>
+
+        <ul>
+            <li>কোনো বিড়ালের লোম বেশি, কোনো বিড়ালের কম।</li>
+            <li>কোনো বিড়াল বসে আছে, কোনোটা শুয়ে আছে।</li>
+            <li>কোনো ছবিতে বিড়ালটা ছোট, কোনো ছবিতে বড়।</li>
+        </ul>
+
+        <p>
+            তাই বিড়াল চেনার সমস্ত rule আমাদের নিজেদের হাতে লিখে দেওয়া
+            অত্যন্ত কঠিন।
+        </p>
+
+        <p>
+            এখানেই Machine Learning-এর প্রয়োজন হয়।
+        </p>
+
+        <p>
+            Machine Learning-এ আমরা অনেকগুলো example computer-কে দিই এবং বলি—
+        </p>
+
+        <blockquote>
+            “এই data-গুলো দেখো এবং নিজে থেকে একটা pattern খুঁজে বের করার
+            চেষ্টা করো।”
+        </blockquote>
+
+        <p>
+            অর্থাৎ এখানে ধারণাটা অনেকটা এমন:
+        </p>
+
+        <p>
+            <strong>Data + Correct Answers → Learning → Model</strong>
+        </p>
+
+        <p>
+            তারপর,
+        </p>
+
+        <p>
+            <strong>New Data + Model → Prediction</strong>
+        </p>
+
+    </div>
+    <div class="intro cmath">
+        <h2 id="4">একটা খুব সহজ উদাহরণ</h2>
+
+        <p>
+            ধরো, আমরা একটা computer program বানাতে চাই যেটা বলবে—
+        </p>
+
+        <blockquote>
+            “কোনো student পরীক্ষায় Pass করবে নাকি Fail করবে।”
+        </blockquote>
+
+        <p>
+            আমরা আগের কিছু students-এর data সংগ্রহ করলাম।
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>পড়ার সময়</th>
+                    <th>Attendance</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>2 ঘণ্টা</td>
+                    <td>60%</td>
+                    <td>Fail</td>
+                </tr>
+
+                <tr>
+                    <td>3 ঘণ্টা</td>
+                    <td>65%</td>
+                    <td>Fail</td>
+                </tr>
+
+                <tr>
+                    <td>5 ঘণ্টা</td>
+                    <td>80%</td>
+                    <td>Pass</td>
+                </tr>
+
+                <tr>
+                    <td>6 ঘণ্টা</td>
+                    <td>85%</td>
+                    <td>Pass</td>
+                </tr>
+
+                <tr>
+                    <td>8 ঘণ্টা</td>
+                    <td>95%</td>
+                    <td>Pass</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            এখানে computer-এর কাছে আগের students-এর data আছে।
+        </p>
+
+        <p>
+            সে হয়তো লক্ষ্য করবে যে,
+        </p>
+
+        <blockquote>
+            পড়ার সময় এবং attendance সাধারণত বেশি হলে Pass করার
+            সম্ভাবনাও বেশি।
+        </blockquote>
+
+        <p>
+            Computer এই data থেকে যে pattern শিখল, সেটাকে আমরা একটি
+            <strong>Model</strong> হিসেবে ভাবতে পারি।
+        </p>
+
+        <p>
+            এবার নতুন একজন student-এর data দিলাম:
+        </p>
+
+        <ul>
+            <li><strong>পড়ার সময়:</strong> 6 ঘণ্টা</li>
+            <li><strong>Attendance:</strong> 88%</li>
+        </ul>
+
+        <p>
+            এখন model বলল:
+        </p>
+
+        <blockquote>
+            “এই student-এর Pass করার সম্ভাবনা বেশি।”
+        </blockquote>
+
+        <p>
+            এটাই একটি খুব সাধারণ Machine Learning problem।
+        </p>
+    </div>
+    <div class="intro cmath">
+        <h2 id="5">তাহলে Model কী?</h2>
+
+        <p>
+            এখন একটা নতুন শব্দ এল—<strong>Model</strong>।
+        </p>
+
+        <p>
+            Model-কে তুমি আপাতত এভাবে ভাবতে পারো:
+        </p>
+
+        <blockquote>
+            Model হল data থেকে শেখা একটি ব্যবস্থা, যেটা নতুন data দেখে
+            prediction করতে পারে।
+        </blockquote>
+
+        <p>
+            একজন student যেমন অনেকগুলো example দেখে একটা ধারণা তৈরি করে,
+            Machine Learning model-ও অনেকগুলো data দেখে একটা pattern শেখে।
+        </p>
+
+        <p>
+            তারপর সেই pattern ব্যবহার করে নতুন data সম্পর্কে সিদ্ধান্ত নেয়।
+        </p>
+
+        <p>
+            তাই Machine Learning-এর ক্ষেত্রে আমরা বারবার তিনটি শব্দ শুনব:
+        </p>
+
+        <p>
+            <strong>Data → Model → Prediction</strong>
+        </p>
+
+        <p>
+            এই তিনটি শব্দ ভালোভাবে বুঝে ফেললে Machine Learning-এর
+            অনেকটাই সহজ হয়ে যাবে।
+        </p>
+
+    </div>
+    <div class="intro cmath">
+         <h2 id="6">Machine Learning কি মানুষের মতো চিন্তা করে?</h2>
+
+        <p>
+            <strong>না।</strong>
+        </p>
+
+        <p>
+            এটা খুব গুরুত্বপূর্ণ।
+        </p>
+
+        <p>
+            Machine Learning model মানুষের মতো করে “বোঝে” বা “চিন্তা করে”—
+            এমনটা ধরে নেওয়া ঠিক নয়।
+        </p>
+
+        <p>
+            Computer মূলত data-এর মধ্যে থাকা
+            <strong>mathematical patterns এবং relationships</strong>
+            ব্যবহার করে কাজ করে।
+        </p>
+
+        <p>
+            আমরা বাইরে থেকে দেখলে মনে করতে পারি,
+        </p>
+
+        <blockquote>
+            “Computer বুঝে গেছে যে ছবিটা একটা বিড়ালের।”
+        </blockquote>
+
+        <p>
+            কিন্তু ভিতরে আসলে অনেক mathematical calculation-এর মাধ্যমে
+            model একটি prediction তৈরি করছে।
+        </p>
+
+        <p>
+            এই কারণেই Machine Learning শেখার সময় আমরা ধীরে ধীরে
+            <strong>Mathematics, Statistics এবং Programming</strong>-এর
+            দিকে যাব।
+        </p>
+
+        <p>
+            তবে চিন্তা করার কিছু নেই।
+        </p>
+
+        <p>
+            Class 11–12 থেকেই Machine Learning বোঝার জন্য শুরুতেই
+            কঠিন mathematics জানা দরকার নেই।
+        </p>
+
+        <p>
+            প্রথমে দরকার শুধু একটা পরিষ্কার ধারণা:
+        </p>
+
+        <blockquote>
+            Computer-কে সব সময় সরাসরি rule বলে দিতে হবে—এমন নয়।
+            কিছু ক্ষেত্রে আমরা তাকে data দিতে পারি, আর সেই data থেকে
+            সে নিজেই pattern শেখার চেষ্টা করতে পারে।
+        </blockquote>
+
+        <p>
+            এটাই Machine Learning-এর Basic Concept।
+        </p>
+    </div>
+    <div class="intro cmath">
+        <h2 id="7">একটু ভাবো</h2>
+
+        <p>
+            YouTube কীভাবে বুঝতে পারে তুমি কোন ধরনের ভিডিও দেখতে পছন্দ করো?
+        </p>
+
+        <p>
+            Netflix কীভাবে তোমাকে movie বা series recommend করে?
+        </p>
+
+        <p>
+            Gmail কীভাবে বুঝতে পারে কোন email spam হতে পারে?
+        </p>
+
+        <p>
+            এগুলোর পিছনেও কি Machine Learning-এর কোনো ভূমিকা থাকতে পারে?
+        </p>
+    </div>
+    
+</body>
+
+</html>
